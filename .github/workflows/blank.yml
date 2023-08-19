@@ -36,7 +36,7 @@ jobs:
 
           NEXT_DAY_EVENTS=$(echo "$ALL_EVENTS" | jq '[.[] | select(.name? and .date? and .schedule_id? and (.date|type == "string") and ((.date | strptime("%Y-%m-%d") | mktime) < (now + 86400)))]')
 
-          echo "$NEXT_DAY_EVENTS" | jq -r '.[] | "\(.date) bus \(.name) surinkinėjamos"' | while read -r REMINDER; do
+          echo "$NEXT_DAY_EVENTS" | jq -r '.[] | "\(.date) surinkinėjamos \(.name)"' | while read -r REMINDER; do
              curl -d "$REMINDER" ntfy.sh/berzoras_trac_waste
           done
 
