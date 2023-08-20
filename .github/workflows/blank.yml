@@ -4,15 +4,14 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '0 11 * * *'
-
+    - cron: '0 15 * * *'
+    
 jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
       - name: Check out this repo
         uses: actions/checkout@v3
-
       - name: Fetch latest data
         run: |
           ALL_EVENTS=$(curl -X POST "https://tratc.lt/wp-admin/admin-ajax.php" \
@@ -39,7 +38,6 @@ jobs:
           echo "$NEXT_DAY_EVENTS" | jq -r '.[] | "\(.date) surinkinėjamos \(.name)"' | while read -r REMINDER; do
              curl -d "$REMINDER" ntfy.sh/berzoras_trac_waste
           done
-
       - name: Commit and push if it changed
         run: |
           git config user.name "Automated"
