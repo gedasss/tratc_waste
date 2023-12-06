@@ -8,19 +8,6 @@
     "house_id": null,
     "schedule_id": "400",
     "type_id": "1",
-    "date": "2023-12-06",
-    "name": "Mišrios komunalinės atliekos",
-    "color": "#616161"
-  },
-  {
-    "id": "1",
-    "municipality_id": "1",
-    "eldership_id": "6",
-    "village_id": "114",
-    "street_id": null,
-    "house_id": null,
-    "schedule_id": "400",
-    "type_id": "1",
     "date": "2023-12-20",
     "name": "Mišrios komunalinės atliekos",
     "color": "#616161"
