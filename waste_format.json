@@ -13,19 +13,6 @@
     "color": "#616161"
   },
   {
-    "id": "2",
-    "municipality_id": "1",
-    "eldership_id": "6",
-    "village_id": "114",
-    "street_id": null,
-    "house_id": null,
-    "schedule_id": "400",
-    "type_id": "2",
-    "date": "2023-12-14",
-    "name": "Pakuočių atliekos",
-    "color": "#267ae8"
-  },
-  {
     "id": "3",
     "municipality_id": "1",
     "eldership_id": "6",
