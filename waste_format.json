@@ -11,18 +11,5 @@
     "date": "2023-12-20",
     "name": "Mišrios komunalinės atliekos",
     "color": "#616161"
-  },
-  {
-    "id": "3",
-    "municipality_id": "1",
-    "eldership_id": "6",
-    "village_id": "114",
-    "street_id": null,
-    "house_id": null,
-    "schedule_id": "400",
-    "type_id": "3",
-    "date": "2023-12-18",
-    "name": "Stiklo pakuotė",
-    "color": "#85ea71"
   }
 ]
