@@ -29,7 +29,7 @@ jobs:
             -H "Sec-Fetch-Site: same-origin" \
             -H "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" \
             -H "X-Requested-With: XMLHttpRequest" \
-            --data "action=scheduleFilter&filters[municipality]=1&filters[eldership]=6&filters[village]=114&filters[street]=0&filters[house]=0" | jq '[.[] | select(.name? and .date? and .schedule_id? and (.date|type == "string") and ((.date | strptime("%Y-%m-%d") | mktime) > now))]')
+            --data "action=scheduleFilter&filters[municipality]=625&filters[eldership]=6&filters[village]=131&filters[street]=0&filters[house]=0" | jq '[.[] | select(.name? and .date? and .schedule_id? and (.date|type == "string") and ((.date | strptime("%Y-%m-%d") | mktime) > now))]')
           
           echo "$ALL_EVENTS" | jq 'unique_by(.name, .date, .schedule_id)' > waste_format.json
 
