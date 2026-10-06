@@ -6,19 +6,6 @@
     "village_id": "114",
     "street_id": null,
     "house_id": null,
-    "schedule_id": "16",
-    "type_id": "1",
-    "date": "2026-10-06",
-    "name": "Mišrios komunalinės atliekos",
-    "color": "#616161"
-  },
-  {
-    "id": "1",
-    "municipality_id": "1",
-    "eldership_id": "6",
-    "village_id": "114",
-    "street_id": null,
-    "house_id": null,
     "schedule_id": "17",
     "type_id": "1",
     "date": "2026-10-20",
@@ -128,19 +115,6 @@
     "date": "2026-12-10",
     "name": "Pakuočių atliekos",
     "color": "#267ae8"
-  },
-  {
-    "id": "1",
-    "municipality_id": "1",
-    "eldership_id": "6",
-    "village_id": "114",
-    "street_id": null,
-    "house_id": null,
-    "schedule_id": "4",
-    "type_id": "3",
-    "date": "2026-10-06",
-    "name": "Stiklo pakuotė",
-    "color": "#85ea71"
   },
   {
     "id": "1",
